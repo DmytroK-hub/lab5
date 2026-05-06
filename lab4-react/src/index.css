@@ -1,0 +1,49 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #1f2933;
+
+  font-size: 18px; /* 🔥 ЗБІЛЬШИЛИ ВСЕ */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* Текст */
+p {
+  font-size: 1rem;
+}
+
+/* Прибираємо точки ВСЮДИ */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Посилання */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

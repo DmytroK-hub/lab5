@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <button id="themeToggle">Змінити тему</button>
+    <h1>Лабораторна робота №4</h1>
+    <p>Зберігання інформації про браузер та операційну систему у localStorage.</p>
+
+    <section class="comments-section">
+        <h2>Коментарі попередніх роботодавців</h2>
+        <div id="commentsList"></div>
+    </section>
+</main>
+
+<footer>
+    <h3>Інформація з localStorage:</h3>
+    <div id="systemInfo"></div>
+</footer>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal" class="close-btn">×</button>
+
+        <h2>Форма зворотнього зв'язку</h2>
+
+        <form action="https://formspree.io/f/mzdorbnw" method="POST">
+            <label>
+                Ім’я:
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Номер телефону:
+                <input type="tel" name="phone" required>
+            </label>
+
+            <label>
+                Повідомлення:
+                <textarea name="message" required></textarea>
+            </label>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
