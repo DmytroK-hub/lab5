@@ -12,7 +12,7 @@ function Header() {
       <h1>Дмитро Куцупера</h1>
 
       <p style={{ fontSize: "18px" }}>
-        <strong>Бажана посада:</strong> Студент
+        <strong>Бажана посада:</strong> React Developer Student
       </p>
 
       <div style={{ marginTop: "15px", lineHeight: "1.8" }}>
