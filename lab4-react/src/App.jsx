@@ -9,7 +9,7 @@ import ContactForm from './components/ContactForm';
 import './App.css';
 
 function App() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     useEffect(() => {
         const hour = new Date().getHours();
@@ -22,48 +22,27 @@ function App() {
     }, []);
 
     const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
+        if (theme === "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
     };
 
     return (
         <div className={`app ${theme}`}>
-            <button className="theme-btn" onClick={toggleTheme}>
-                Змінити тему
-            </button>
+            <div className="container">
+                <button className="theme-btn" onClick={toggleTheme}>
+                    Змінити тему
+                </button>
 
-            <div className="resume-layout">
-                <aside className="sidebar">
-                    <div className="avatar-placeholder">
-                        DK
-                    </div>
-
-                    <h2>Контакти</h2>
-                    <p>Email: kucuperadmytro@gmail.com</p>
-                    <p>Телефон: +380 968043816</p>
-                    <p>GitHub: DmytroK-hub</p>
-
-                    <h2>Навички</h2>
-                    <ul>
-                        <li>Python</li>
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-
-                    <h2>Хобі</h2>
-                    <p>Навчання, програмування, кібербезпека</p>
-                </aside>
-
-                <main className="main-content">
-                    <Header />
-                    <Experience />
-                    <Education />
-                    <Reviews />
-                    <Footer />
-                </main>
+                <Header />
+                <Experience />
+                <Education />
+                <Reviews />
+                <Footer />
+                <ContactForm />
             </div>
-
-            <ContactForm />
         </div>
     );
 }
